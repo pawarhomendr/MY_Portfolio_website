@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background: #1f242d;
+  color: #fff;
+  padding-top: 120px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 25px 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f242d;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar li:hover a,
+.navbar .active a {
+  color: #e56b0d;
+}
+
+/* ===== SERVICES ===== */
+.services {
+  text-align: center;
+  animation: fadeUp 1s ease forwards;
+}
+
+.services h1 {
+  font-size: 48px;
+  color: #e56b0d;
+}
+
+.subtitle {
+  color: #ccc;
+  margin: 10px 0 50px;
+  font-size: 16px;
+}
+
+/* ===== GRID ===== */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 0 9%;
+}
+
+/* ===== CARD ===== */
+.service-card {
+  background: #2a2f3a;
+  padding: 35px;
+  border-radius: 20px;
+  transition: 0.4s ease;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(229,107,13,0.6);
+}
+
+/* ===== CARD TEXT ===== */
+.service-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.service-card p {
+  font-size: 15px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1200px) {
+  .services h1 {
+    font-size: 45px;
+  }
+  .services-grid {
+    padding: 0 8%;
+    gap: 25px;
+  }
+  .service-card {
+    padding: 30px;
+  }
+  .service-card h3 {
+    font-size: 20px;
+  }
+  .service-card p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .services h1 {
+    font-size: 42px;
+  }
+  .services-grid {
+    padding: 0 7%;
+    gap: 25px;
+  }
+  .service-card {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services h1 {
+    font-size: 36px;
+  }
+
+  .services-grid {
+    padding: 0 6%;
+  }
+}
+
+@media (max-width: 600px) {
+  .services h1 {
+    font-size: 32px;
+  }
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 0 5%;
+    gap: 20px;
+  }
+  .service-card {
+    padding: 25px;
+  }
+  .service-card h3 {
+    font-size: 18px;
+  }
+  .service-card p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services h1 {
+    font-size: 28px;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+    padding: 0 4%;
+    gap: 20px;
+  }
+  .service-card {
+    padding: 20px;
+  }
+  .service-card h3 {
+    font-size: 16px;
+  }
+  .service-card p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .services h1 {
+    font-size: 24px;
+  }
+  .services-grid {
+    padding: 0 3%;
+    gap: 15px;
+  }
+  .service-card {
+    padding: 18px;
+  }
+  .service-card h3 {
+    font-size: 15px;
+  }
+  .service-card p {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #1f242d;
+  color: #fff;
+  padding-top: 120px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 25px 9%;
+  display: flex;
+  justify-content: space-between;
+  background: #1f242d;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  font-weight: 500;
+  font-size: 25px;
+  list-style: none;
+  margin-left: 30px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .active a {
+  color: #e56b0d;
+}
+
+.page {
+  text-align: center;
+  animation: fadeUp 1s ease forwards;
+}
+
+.page h1 {
+  font-size: 48px;
+  color: #e56b0d;
+}
+
+.page p {
+  max-width: 600px;
+  margin: 20px auto;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.page span {
+  color: #e56b0d;
+  font-weight: 600;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.page{
+  padding: 10px 10px;
+  margin: auto;
+  width: fit-content;
+  background-color: #1f242d;
+  box-shadow: #63441b 0px 0px 10px;
+  border-radius: 30px;
+  transition: 0.5s;
+  transform: scaleX(0.3s);
+}
+
+.logo{
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1200px) {
+  .page h1 {
+    font-size: 45px;
+  }
+  .page p {
+    max-width: 550px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .page h1 {
+    font-size: 42px;
+  }
+  .page p {
+    max-width: 500px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page h1 {
+    font-size: 38px;
+  }
+  .page p {
+    max-width: 450px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page h1 {
+    font-size: 34px;
+  }
+  .page p {
+    max-width: 400px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page h1 {
+    font-size: 30px;
+  }
+  .page p {
+    max-width: 350px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  .page h1 {
+    font-size: 26px;
+  }
+  .page p {
+    max-width: 300px;
+    font-size: 12px;
+  }
+}

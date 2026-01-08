@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background: #1f242d;
+  color: #fff;
+  padding-top: 120px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 25px 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f242d;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar li:hover a,
+.navbar .active a {
+  color: #e56b0d;
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+  text-align: center;
+  animation: fadeUp 1.1s ease forwards;
+}
+
+.contact-section h1 {
+  font-size: 48px;
+  color: #e56b0d;
+}
+
+.subtitle {
+  color: #ccc;
+  margin: 10px 0 40px;
+  font-size: 16px;
+}
+
+/* ===== CARD ===== */
+.contact-card {
+  max-width: 600px;
+  margin: auto;
+  background: #2a2f3a;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+/* ===== CONTACT ITEM ===== */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+.contact-item i {
+  font-size: 22px;
+  color: #e56b0d;
+  min-width: 30px;
+}
+
+.contact-item a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.contact-item a:hover {
+  color: #e56b0d;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1200px) {
+  .contact-section h1 {
+    font-size: 45px;
+  }
+  .contact-card {
+    max-width: 550px;
+    padding: 30px;
+  }
+  .contact-item a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section h1 {
+    font-size: 40px;
+  }
+  .contact-card {
+    max-width: 500px;
+    padding: 28px;
+  }
+  .contact-item a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-section h1 {
+    font-size: 36px;
+  }
+
+  .contact-card {
+    padding: 25px;
+  }
+
+  .contact-item a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section h1 {
+    font-size: 32px;
+  }
+  .contact-card {
+    padding: 20px;
+  }
+  .contact-item a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  .contact-section h1 {
+    font-size: 28px;
+  }
+  .contact-card {
+    padding: 18px;
+  }
+  .contact-item a {
+    font-size: 12px;
+  }
+}

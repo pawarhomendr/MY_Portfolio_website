@@ -1,0 +1,16 @@
+.chatbot-input {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#micBtn {
+  background: #00f2ff;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #00f2ff;
+}
